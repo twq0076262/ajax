@@ -1,19 +1,18 @@
 #  Ajax 中文版
 
-官方英文原版：   
-http://www.tutorialspoint.com/ajax/index.htm
-## 目的
 
-翻译官方文档，目录见文件 [TOC.md](TOC.md)
+AJAX 是一种用于创建交互式Web应用程序的Web开发技术。本教程适用于想要学习如何创建交互式网页以及使用 AJAX 改善速度和可用性的 Web 开发人员。
 
-## 操作示例
+|更新日期    |更新内容
+|----------|--------------------
+|2015-05-5|Ajax 中文版
 
-https://github.com/jikexueyuanwiki/guide
+如果你知道 JavaScript，HTML，CSS 和 XML，那么你只需要花费 1 个小时开始学习 AJAX。
 
-## 如何添加图片
+## 读者
 
-前提：官网上的所有图片都已经下载下来放入「images」文件夹，图片的文件名没做任何修改。
+本教程适用于想要学习如何创建交互式网页以及使用 AJAX 改善速度和可用性的 Web 开发人员。
 
-1、请引用「images」文件夹中的图片，不要直接引用官方上的图片链接；    
-2、引用「images」文件夹时，请使用相对文件路径。
+## 预备知识
 
+学习本教程之前强烈建议你先熟悉一下 HTML 和 JavaScript。

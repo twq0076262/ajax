@@ -1,5 +1,4 @@
  - AJAX 教程
-   - [AJAX 教程](index.md)
    - [什么是 AJAX？](what_is_ajax.md)
    - [AJAX 技术](ajax_technology.md)
    - [AJAX 示例](ajax_examples.md)
