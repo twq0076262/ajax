@@ -4,7 +4,7 @@
 
 __注意：__ 这里我们假设你有足够的权限执行以下 MySQL 操作。
 
-```sql
+```
 CREATE TABLE 'ajax_example' (
    'name' varchar(50) NOT NULL,
    'age' int(11) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE 'ajax_example' (
 
 然后使用下面的 SQL 语句把下列数据存到这个表中：
 
-```sql
+```
 INSERT INTO 'ajax_example' VALUES ('Jerry', 120, 'm', 20);
 INSERT INTO 'ajax_example' VALUES ('Regis', 75, 'm', 44);
 INSERT INTO 'ajax_example' VALUES ('Frank', 45, 'm', 87);
@@ -29,7 +29,7 @@ INSERT INTO 'ajax_example' VALUES ('Julie', 35, 'f', 90);
 
 现在我们来建立客户端的 HTML 文件，也就是 ajax.html，它的代码如下所示：
 
-```html
+```
 <html>
 <body>
 <script language="javascript" type="text/javascript">
@@ -118,7 +118,7 @@ __注意：__ 这里是一个模拟的屏幕显示。
 
 客户端脚本已经准备就绪。现在，我们来编写服务端脚本，它会从数据库中提取 age，wpm 和 sex，然后把它们发送回客户端。请把下面的代码放到 "ajax-example.php" 中。
 
-```php
+```
 <?php
 $dbhost = "localhost";
 $dbuser = "dbusername";

@@ -90,7 +90,7 @@ Gmail 是一个网络邮箱，它的理念是邮箱可以更直观，高效，�
 
 __AJAX示例__
 
-```html
+```
 <form name="form1" action="" onsubmit="return ajax_call()">
 	<input type="text" name="num1" id="num1"></input> *
 	<input type="text" name="num2" id="num2"></input> = 
@@ -132,7 +132,7 @@ function ajax_call() {
 
 __标准示例__
 
-```html
+```
 <form name="form1" action="/cgi-bin/ajaxCGI.cgi">
 	<input type="text" name="num1" id="num1" value=0></input> *
 	<input type="text" name="num2" id="num2" value=0></input> =
@@ -162,7 +162,7 @@ __注意：__当我们说某个浏览器不支持 AJAX 时，只是意味着该�
 
 让代码与浏览器兼容最简单的方式便是在 JavaScript 中使用 _`try..catch`_ 块。
 
-```html
+```
 <html>
 <body>
 	<script language="javascript" type="text/javascript">
@@ -237,7 +237,7 @@ __注意：__当我们说某个浏览器不支持 AJAX 时，只是意味着该�
 
 ### 创建 XMLHttpRequest 对象
 
-```javascript
+```
 var ajaxRequest;  // 缓存 XMLHttpRequest 对象
 function ajaxFunction(){
 	try{
@@ -266,7 +266,7 @@ function ajaxFunction(){
 
 在这个步骤中，我们将会编写一个由客户端事件触发的函数，然后注册一个 processRequest() 回调函数。
 
-```javascript
+```
 function validateUserId() {
 	ajaxFunction();
 
@@ -285,7 +285,7 @@ function validateUserId() {
 
 上面的代码是有效的。加粗的代码负责发起到 Web 服务器的请求。这是使用 XMLHttpRequest 对象 _ajaxRequest_ 做到的。
 
-```javascript
+```
 function validateUserId() {
 	ajaxFunction();
 
@@ -313,7 +313,7 @@ function validateUserId() {
 
 假设我们要编写一个 servlet 程序，这里有一段示例代码。
 
-```java
+```
 public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 	String targetId = request.getParameter("id");
 
@@ -333,7 +333,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response) thro
 
 XMLHttpRequest 对象被配置为 _XMLHttpRequest_ 对象的 _readyState_ 状态发生变化时调用 processRequest() 函数。这个函数接受从服务端返回的结果然后做必要的处理。正如下面的示例所示，它基于从 Web 服务器返回的值将消息变量设置为 true 或 false。
 
-```javascript
+```
 function processRequest() {
 	if (req.readyState == 4) {
 		if (req.status == 200) {
@@ -349,14 +349,14 @@ function processRequest() {
 - JavaScript 使用 DOM API 获取页面任意元素的引用。
 - 获取一个元素引用推荐的方式就是调用
 
-```javascript
+```
 document.getElementById("userIdMessage"), 
 // 这里 "userIdMessage" 就是 HTML 文档中某个元素的 ID 属性
 ```
 
 - 然后 JavaScript 可能被用来修改元素的属性；修改元素的样式属性，或者添加，移除或修改元素的子元素。这里有一个例子：
 
-```html
+```
 <script type="text/javascript">
 <!--
 function setMessageUsingDOM(message) {
@@ -509,7 +509,7 @@ __readyState = 4__ 在请求完成以及响应数据已经完全从服务器接�
 
 __注意：__ 这里我们假设你有足够的权限执行以下 MySQL 操作。
 
-```sql
+```
 CREATE TABLE 'ajax_example' (
    'name' varchar(50) NOT NULL,
    'age' int(11) NOT NULL,
@@ -521,7 +521,7 @@ CREATE TABLE 'ajax_example' (
 
 然后使用下面的 SQL 语句把下列数据存到这个表中：
 
-```sql
+```
 INSERT INTO 'ajax_example' VALUES ('Jerry', 120, 'm', 20);
 INSERT INTO 'ajax_example' VALUES ('Regis', 75, 'm', 44);
 INSERT INTO 'ajax_example' VALUES ('Frank', 45, 'm', 87);
@@ -534,7 +534,7 @@ INSERT INTO 'ajax_example' VALUES ('Julie', 35, 'f', 90);
 
 现在我们来建立客户端的 HTML 文件，也就是 ajax.html，它的代码如下所示：
 
-```html
+```
 <html>
 <body>
 <script language="javascript" type="text/javascript">
@@ -623,7 +623,7 @@ __注意：__ 这里是一个模拟的屏幕显示。
 
 客户端脚本已经准备就绪。现在，我们来编写服务端脚本，它会从数据库中提取 age，wpm 和 sex，然后把它们发送回客户端。请把下面的代码放到 "ajax-example.php" 中。
 
-```php
+```
 <?php
 $dbhost = "localhost";
 $dbuser = "dbusername";

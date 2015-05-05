@@ -22,7 +22,7 @@
 
 ## 创建 XMLHttpRequest 对象
 
-```javascript
+```
 var ajaxRequest;  // 缓存 XMLHttpRequest 对象
 function ajaxFunction(){
 	try{
@@ -51,7 +51,7 @@ function ajaxFunction(){
 
 在这个步骤中，我们将会编写一个由客户端事件触发的函数，然后注册一个 processRequest() 回调函数。
 
-```javascript
+```
 function validateUserId() {
 	ajaxFunction();
 
@@ -70,7 +70,7 @@ function validateUserId() {
 
 上面的代码是有效的。加粗的代码负责发起到 Web 服务器的请求。这是使用 XMLHttpRequest 对象 _ajaxRequest_ 做到的。
 
-```javascript
+```
 function validateUserId() {
 	ajaxFunction();
 
@@ -98,7 +98,7 @@ function validateUserId() {
 
 假设我们要编写一个 servlet 程序，这里有一段示例代码。
 
-```java
+```
 public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 	String targetId = request.getParameter("id");
 
@@ -118,7 +118,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response) thro
 
 XMLHttpRequest 对象被配置为 _XMLHttpRequest_ 对象的 _readyState_ 状态发生变化时调用 processRequest() 函数。这个函数接受从服务端返回的结果然后做必要的处理。正如下面的示例所示，它基于从 Web 服务器返回的值将消息变量设置为 true 或 false。
 
-```javascript
+```
 function processRequest() {
 	if (req.readyState == 4) {
 		if (req.status == 200) {
@@ -134,14 +134,14 @@ function processRequest() {
 - JavaScript 使用 DOM API 获取页面任意元素的引用。
 - 获取一个元素引用推荐的方式就是调用
 
-```javascript
+```
 document.getElementById("userIdMessage"), 
 // 这里 "userIdMessage" 就是 HTML 文档中某个元素的 ID 属性
 ```
 
 - 然后 JavaScript 可能被用来修改元素的属性；修改元素的样式属性，或者添加，移除或修改元素的子元素。这里有一个例子：
 
-```html
+```
 <script type="text/javascript">
 <!--
 function setMessageUsingDOM(message) {

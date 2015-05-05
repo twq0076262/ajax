@@ -32,7 +32,7 @@ Gmail 是一个网络邮箱，它的理念是邮箱可以更直观，高效，�
 
 __AJAX示例__
 
-```html
+```
 <form name="form1" action="" onsubmit="return ajax_call()">
 	<input type="text" name="num1" id="num1"></input> *
 	<input type="text" name="num2" id="num2"></input> = 
@@ -74,7 +74,7 @@ function ajax_call() {
 
 __标准示例__
 
-```html
+```
 <form name="form1" action="/cgi-bin/ajaxCGI.cgi">
 	<input type="text" name="num1" id="num1" value=0></input> *
 	<input type="text" name="num2" id="num2" value=0></input> =

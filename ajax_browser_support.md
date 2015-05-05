@@ -17,7 +17,7 @@ __注意：__当我们说某个浏览器不支持 AJAX 时，只是意味着该�
 
 让代码与浏览器兼容最简单的方式便是在 JavaScript 中使用 _`try..catch`_ 块。
 
-```html
+```
 <html>
 <body>
 	<script language="javascript" type="text/javascript">
